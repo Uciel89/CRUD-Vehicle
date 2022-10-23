@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="arrow">flecha</string>
+    <string name="start">Empezar</string>
+    <string name="skip">Saltear</string>
+    <string name="add">add</string>
+</resources>

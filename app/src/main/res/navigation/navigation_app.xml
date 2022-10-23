@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_app"
+    app:startDestination="@id/listFragment">
+
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.example.crud_vehicle.view.ui.list.ListFragment"
+        android:label="Lista"
+        tools:layout="@layout/fragment_list" >
+        <action
+            android:id="@+id/action_listFragment_to_addVehicleFragment"
+            app:destination="@id/addVehicleFragment" />
+        <action
+            android:id="@+id/action_listFragment_to_descriptionFragment"
+            app:destination="@id/descriptionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addVehicleFragment"
+        android:name="com.example.crud_vehicle.view.ui.add.AddVehicleFragment"
+        android:label="Agregar"
+        tools:layout="@layout/fragment_add_vehicle" >
+        <action
+            android:id="@+id/action_addVehicleFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/descriptionFragment"
+        android:name="com.example.crud_vehicle.view.ui.description.DescriptionFragment"
+        android:label="Descripción"
+        tools:layout="@layout/fragment_description" >
+        <action
+            android:id="@+id/action_descriptionFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+        <action
+            android:id="@+id/action_descriptionFragment_to_updateFragment"
+            app:destination="@id/updateFragment" />
+        <argument
+            android:name="currentVehicle"
+            app:argType="com.example.crud_vehicle.model.Vehicle" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateFragment"
+        android:name="com.example.crud_vehicle.view.ui.update.UpdateFragment"
+        android:label="Actualizar"
+        tools:layout="@layout/fragment_update" >
+        <argument
+            android:name="currentVehicle2"
+            app:nullable="true"
+            android:defaultValue="@null"
+            app:argType="com.example.crud_vehicle.model.Vehicle" />
+        <action
+            android:id="@+id/action_updateFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+    </fragment>
+</navigation>

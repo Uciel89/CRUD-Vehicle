@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Crud Vehicle</string>
+    <string name="arrow">flecha</string>
+    <string name="start">Empezar</string>
+    <string name="skip">Saltear</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add">add</string>
+    <string name="n_a">N/A</string>
+</resources>
