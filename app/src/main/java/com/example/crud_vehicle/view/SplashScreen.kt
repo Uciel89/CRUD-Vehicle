@@ -14,6 +14,7 @@ class SplashScreen : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
 
+        // :: SplashScreen config ::
         // :: Configuración SplashScreen ::
         screenSplash.setKeepOnScreenCondition{ true }
         val intent = Intent(this, OnboardingActivity::class.java)

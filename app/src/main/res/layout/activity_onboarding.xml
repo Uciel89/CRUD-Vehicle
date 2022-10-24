@@ -4,17 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.OnboardingActivity"
-    android:background="@color/black">
+    tools:context=".view.OnboardingActivity">
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/onboardingViewPager"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@drawable/background_onboarding"
+        android:elevation="2dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/background_onboarding"
         app:layout_constraintBottom_toTopOf="@+id/viewPoint"/>
 
     <com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
@@ -23,12 +23,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         app:dotsColor="@color/secondary"
-        app:dotsStrokeColor="@color/primary"
+        app:dotsStrokeColor="@color/primary_dark"
         app:dotsCornerRadius="8dp"
         app:dotsSize="14dp"
         app:dotsSpacing="4dp"
         app:dotsWidthFactor="2.5"
         app:progressMode="true"
+        android:elevation="3dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -41,6 +42,7 @@
         android:contentDescription="@string/arrow"
         android:src="@drawable/ic_arrow"
         app:fabCustomSize="40dp"
+        android:elevation="3dp"
         app:layout_constraintBottom_toTopOf="@+id/buttonSkip"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -70,7 +72,6 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:text="@string/skip"
-        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

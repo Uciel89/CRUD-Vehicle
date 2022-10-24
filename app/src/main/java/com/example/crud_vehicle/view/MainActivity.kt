@@ -24,14 +24,17 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // ToolBar config
         // Configuración Toolbar
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
 
+        // Navigation between fragments
         // Navegación entre fragmentos
         val navHostFrament = supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
         navController = navHostFrament.navController
 
+        // Adapting TooBar for navigation between fragments
         // Adaptando Toolbar para la navegación entre fragments
         setupActionBarWithNavController(navController)
 
@@ -42,7 +45,8 @@ class MainActivity : AppCompatActivity() {
         return navController.navigateUp() || super.onSupportNavigateUp()
     }
 
-    // :: Configuracion Menu ::
+    // :: Menu config ::
+    // :: Configuración Menu ::
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu_app, menu)
         return super.onCreateOptionsMenu(menu)

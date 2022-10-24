@@ -17,7 +17,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:cardCornerRadius="10dp"
-        app:cardBackgroundColor="@color/secondary_dark">
+        style="@style/Style.CardView"
+        app:cardElevation="10dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -29,27 +30,25 @@
                 android:id="@+id/txtMarca"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="N/A"
+                android:text="@string/n_a"
                 android:textSize="20sp"
                 android:textStyle="bold"
-                android:textColor="@color/white"
                 android:layout_marginStart="9dp"/>
 
             <TextView
                 android:id="@+id/txtModel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="N/A"
-                android:textColor="@color/white"
-                android:layout_marginStart="8dp"/>
+                android:layout_marginStart="8dp"
+                android:text="@string/n_a"
+                />
 
             <TextView
                 android:id="@+id/txtPatente"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="N/A"
-                android:textColor="@color/white"
-                android:layout_marginStart="8dp"/>
+                android:layout_marginStart="8dp"
+                android:text="@string/n_a" />
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>

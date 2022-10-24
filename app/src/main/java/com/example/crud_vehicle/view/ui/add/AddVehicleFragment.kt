@@ -26,15 +26,17 @@ class AddVehicleFragment : Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_add_vehicle, container, false)
 
+        // We
         // Instanciamos el viewModel de Vehiculos
         mVehicleViewModel = ViewModelProvider(this)[VehicleViewModel::class.java]
 
         view.findViewById<MaterialButton>(R.id.buttonSave).setOnClickListener { insertDataToDatabase() }
         return view
     }
-
+    /** :: Method to add data within of the data base :: **/
     /** :: Método para agregar datos dentro de la base de datos :: **/
     private fun insertDataToDatabase() {
+        // We get the entered for text input
         // Obtenemos lo ingresado por campos de texto
         val marca = view?.findViewById<TextView>(R.id.txtEditMarca)?.text.toString()
         val modelo = view?.findViewById<TextView>(R.id.txtEditModelo)?.text.toString()
@@ -44,13 +46,16 @@ class AddVehicleFragment : Fragment() {
         val puertas = view?.findViewById<TextView>(R.id.txtEditPuertas)?.text.toString()
 
         if(inputCheck(marca, modelo, patente, motor, color, puertas)){
+            // We create a instance of the Vehicle class
             // Creamos una instancia de la clase Vehiculo
             val vehicle = Vehicle(0,marca, modelo, patente, motor, color, puertas)
 
+            // Add this data into of our data base
             // Agregamos estos datos dentro de nuestra base de datos
             mVehicleViewModel.addVehicle(vehicle)
             Toast.makeText(requireContext(), "Vehiculo guardado correctamente", Toast.LENGTH_SHORT).show()
 
+            // Return to the before fragment
             // Volvemos a al fragment anterior
             findNavController().navigate(R.id.action_addVehicleFragment_to_listFragment)
         } else {
@@ -58,6 +63,7 @@ class AddVehicleFragment : Fragment() {
         }
     }
 
+    /** :: Method to verify with the inputs aren´t empty :: **/
     /** :: Método para comprobar que los campos no este vacios :: **/
     private fun inputCheck(
         marca: String,

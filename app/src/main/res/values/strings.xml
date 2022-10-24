@@ -7,4 +7,15 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="add">add</string>
     <string name="n_a">N/A</string>
+    <string name="borrar">borrar</string>
+    <string name="editar">editar</string>
+    <string name="patente">Patente</string>
+    <string name="motor">Motor</string>
+    <string name="color">Color</string>
+    <string name="puertas">Puertas</string>
+    <string name="modelo">Modelo</string>
+    <string name="marca">Marca</string>
+    <string name="guardar">guardar</string>
+    <string name="Agregar_Vehiculo">Agregar Vehiculo</string>
+    <string name="actualizar">actualizar</string>
 </resources>

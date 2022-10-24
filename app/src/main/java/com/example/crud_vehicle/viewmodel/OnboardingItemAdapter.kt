@@ -17,7 +17,7 @@ class OnboardingItemAdapter (private val onboardingItems: List<OnboardingItem>) 
         private val textTile = view.findViewById<TextView>(R.id.titleItem)
         private val descriptionTitle = view.findViewById<TextView>(R.id.descriptionItem)
 
-        fun vincular(onboardingItem: OnboardingItem) {
+        fun bind(onboardingItem: OnboardingItem) {
             imageOnboarding.setAnimation(onboardingItem.onboardingImage)
             textTile.text = onboardingItem.title
             descriptionTitle.text = onboardingItem.description
@@ -35,7 +35,7 @@ class OnboardingItemAdapter (private val onboardingItems: List<OnboardingItem>) 
     }
 
     override fun onBindViewHolder(holder: OnboardingItemViewHolder, position: Int) {
-        holder.vincular(onboardingItems[position])
+        holder.bind(onboardingItems[position])
     }
 
     override fun getItemCount(): Int {

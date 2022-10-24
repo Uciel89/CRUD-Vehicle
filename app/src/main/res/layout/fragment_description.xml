@@ -49,8 +49,11 @@
                         android:layout_weight="1"
                         android:width="1dp"
                         android:background="#818181"
-                        android:padding="4dp"
-                        android:text="Modelo"
+                        android:paddingStart="10dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:paddingEnd="0dp"
+                        android:text="@string/modelo"
                         android:textStyle="bold" />
 
 
@@ -76,9 +79,13 @@
                         android:layout_weight="1"
                         android:width="1dp"
                         android:background="@color/primary_light"
-                        android:padding="4dp"
-                        android:text="Patente"
-                        android:textStyle="bold" />
+                        android:paddingStart="10dp"
+                        android:paddingTop="4dp"
+                        android:paddingEnd="0dp"
+                        android:paddingBottom="4dp"
+                        android:text="@string/patente"
+                        android:textStyle="bold"
+                        tools:ignore="TextContrastCheck" />
 
                     <TextView
                         android:id="@+id/textDescriptionPatente"
@@ -102,8 +109,11 @@
                         android:layout_weight="1"
                         android:width="1dp"
                         android:background="#818181"
-                        android:padding="4dp"
-                        android:text="Motor"
+                        android:paddingStart="10dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:paddingEnd="0dp"
+                        android:text="@string/motor"
                         android:textStyle="bold" />
 
                     <TextView
@@ -128,9 +138,13 @@
                         android:layout_weight="1"
                         android:width="1dp"
                         android:background="@color/primary_light"
-                        android:padding="4dp"
-                        android:text="Color"
-                        android:textStyle="bold" />
+                        android:paddingStart="10dp"
+                        android:paddingTop="4dp"
+                        android:paddingEnd="0dp"
+                        android:paddingBottom="4dp"
+                        android:text="@string/color"
+                        android:textStyle="bold"
+                        tools:ignore="TextContrastCheck" />
 
                     <TextView
                         android:id="@+id/textDescriptionColor"
@@ -153,9 +167,12 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:width="1dp"
-                        android:background="#818181"
-                        android:padding="4dp"
-                        android:text="Puertas"
+                        android:background="@color/grey"
+                        android:paddingStart="10dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:paddingEnd="0dp"
+                        android:text="@string/puertas"
                         android:textStyle="bold" />
 
                     <TextView
@@ -179,6 +196,7 @@
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
             android:src="@drawable/ic_delete"
+            android:contentDescription="@string/borrar"
             app:layout_constraintBottom_toTopOf="@+id/fabEdit"
             app:layout_constraintEnd_toEndOf="parent" />
 
@@ -189,7 +207,7 @@
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
             android:src="@drawable/ic_edit"
-
+            android:contentDescription="@string/editar"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>

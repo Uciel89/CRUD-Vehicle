@@ -26,31 +26,33 @@ class OnboardingActivity : AppCompatActivity() {
         checkPref()
     }
 
+    // :: Method to setter data in the ViewPager ::
     // :: Método para setear datos en el ViewPager ::
     private fun setOnboardingItems() {
         onboardingItemAdapter = OnboardingItemAdapter(
             listOf(
                 OnboardingItem(
                     onboardingImage = R.raw.list,
-                    title = "Listado de vehiculos",
-                    description = "Mediante una simple interfaz, poder tener a la palma de la mano un listado de tus vehiculos a la venta"
+                    title = "Listado de vehículos",
+                    description = "Mediante una simple interfaz, poder tener a la palma de la mano un listado de tus vehículos a la venta"
                 ),
                 OnboardingItem(
                     onboardingImage = R.raw.car,
-                    title = "Visualización de caracteristicas",
-                    description = "Visualizar de manera sensilla las caracteristicas de dichos vehiculos"
+                    title = "Visualización de características",
+                    description = "Visualizar de manera sencilla las características de dichos vehículos"
                 ),
             )
         )
-
-        // :: Configurando WormDotsIndicator ::
+        // :: Config WormDotsIndicator ::
+        // :: Configuración WormDotsIndicator ::
         val onboardingViewPager = findViewById<ViewPager2>(R.id.onboardingViewPager)
         val dotsIndicator = findViewById<WormDotsIndicator>(R.id.dots_indicator)
 
         onboardingViewPager.adapter = onboardingItemAdapter
         dotsIndicator.attachTo(onboardingViewPager)
 
-        // :: Configurando botón para navegar en las ViewPagers ::
+        // :: Configuring to the button to navigate in the ViewPagers ::
+        // :: Configuración para el botón para navegar en las ViewPagers ::
         findViewById<FloatingActionButton>(R.id.buttonMovePage).setOnClickListener {
             if(onboardingViewPager.currentItem + 1 < onboardingItemAdapter.itemCount) {
                 onboardingViewPager.currentItem += 1

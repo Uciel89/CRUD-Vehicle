@@ -21,7 +21,8 @@ class VehicleViewModel(application: Application): AndroidViewModel(application) 
         readAllData = repository.readAllData
     }
 
-    // :: Función para crear un usuario utilizando corrutinas ::
+    // :: Methods to communication with the data base ::
+    // :: Métodos para comunicarse con la base de datos ::
     fun getAllVehicles(): LiveData<List<Vehicle>> {
         return readAllData
     }
