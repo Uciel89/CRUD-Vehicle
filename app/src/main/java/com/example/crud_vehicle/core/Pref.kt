@@ -1,4 +1,4 @@
-package com.example.crud_vehicle
+package com.example.crud_vehicle.core
 
 import android.content.Context
 

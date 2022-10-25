@@ -1,4 +1,4 @@
-package com.example.crud_vehicle.viewmodel
+package com.example.crud_vehicle.ui.viewmodel
 
 import android.view.LayoutInflater
 import android.view.View
@@ -7,7 +7,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.airbnb.lottie.LottieAnimationView
 import com.example.crud_vehicle.R
-import com.example.crud_vehicle.model.OnboardingItem
+import com.example.crud_vehicle.data.model.OnboardingItem
 
 class OnboardingItemAdapter (private val onboardingItems: List<OnboardingItem>) :
     RecyclerView.Adapter<OnboardingItemAdapter.OnboardingItemViewHolder>(){

@@ -1,4 +1,4 @@
-package com.example.crud_vehicle.viewmodel
+package com.example.crud_vehicle.ui.viewmodel
 
 import android.view.LayoutInflater
 import android.view.View
@@ -8,8 +8,8 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.example.crud_vehicle.R
-import com.example.crud_vehicle.model.Vehicle
-import com.example.crud_vehicle.view.ui.list.ListFragmentDirections
+import com.example.crud_vehicle.data.room.entities.Vehicle
+import com.example.crud_vehicle.ui.view.fragment.list.ListFragmentDirections
 
 class ListItemAdapter: RecyclerView.Adapter<ListItemAdapter.ListItemViewHolder>() {
 

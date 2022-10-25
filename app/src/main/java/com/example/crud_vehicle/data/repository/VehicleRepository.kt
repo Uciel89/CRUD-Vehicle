@@ -1,8 +1,8 @@
-package com.example.crud_vehicle.repository
+package com.example.crud_vehicle.data.repository
 
 import androidx.lifecycle.LiveData
-import com.example.crud_vehicle.data.VehicleDao
-import com.example.crud_vehicle.model.Vehicle
+import com.example.crud_vehicle.data.room.dao.VehicleDao
+import com.example.crud_vehicle.data.room.entities.Vehicle
 
 class VehicleRepository (private val vehicleDao: VehicleDao) {
 

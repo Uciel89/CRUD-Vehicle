@@ -1,12 +1,12 @@
-package com.example.crud_vehicle.viewmodel
+package com.example.crud_vehicle.ui.viewmodel
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.viewModelScope
-import com.example.crud_vehicle.data.VehicleDatabase
-import com.example.crud_vehicle.repository.VehicleRepository
-import com.example.crud_vehicle.model.Vehicle
+import com.example.crud_vehicle.data.room.VehicleDatabase
+import com.example.crud_vehicle.data.repository.VehicleRepository
+import com.example.crud_vehicle.data.room.entities.Vehicle
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 

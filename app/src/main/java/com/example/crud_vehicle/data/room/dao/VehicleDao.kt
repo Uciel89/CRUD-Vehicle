@@ -1,8 +1,8 @@
-package com.example.crud_vehicle.data
+package com.example.crud_vehicle.data.room.dao
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
-import com.example.crud_vehicle.model.Vehicle
+import com.example.crud_vehicle.data.room.entities.Vehicle
 
 /** :: Definimos los métodos para interactuar con la base de datos :: **/
 @Dao

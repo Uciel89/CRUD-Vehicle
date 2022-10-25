@@ -2,6 +2,7 @@ package com.example.crud_vehicle
 
 import android.annotation.SuppressLint
 import android.app.Application
+import com.example.crud_vehicle.core.Pref
 
 class SharedApp : Application()  {
     companion object{

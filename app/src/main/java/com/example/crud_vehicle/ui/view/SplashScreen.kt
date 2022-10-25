@@ -1,4 +1,4 @@
-package com.example.crud_vehicle.view
+package com.example.crud_vehicle.ui.view
 
 import android.annotation.SuppressLint
 import android.content.Intent

@@ -1,9 +1,7 @@
-package com.example.crud_vehicle.view.ui.list
+package com.example.crud_vehicle.ui.view.fragment.list
 
-import android.app.AlertDialog
 import android.os.Bundle
 import android.view.*
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
@@ -11,8 +9,8 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.crud_vehicle.R
-import com.example.crud_vehicle.viewmodel.ListItemAdapter
-import com.example.crud_vehicle.viewmodel.VehicleViewModel
+import com.example.crud_vehicle.ui.viewmodel.ListItemAdapter
+import com.example.crud_vehicle.ui.viewmodel.VehicleViewModel
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class ListFragment : Fragment() {

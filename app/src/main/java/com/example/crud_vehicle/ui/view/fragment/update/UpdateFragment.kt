@@ -1,27 +1,20 @@
-package com.example.crud_vehicle.view.ui.update
+package com.example.crud_vehicle.ui.view.fragment.update
 
 import android.os.Bundle
 import android.text.TextUtils
-import android.util.Log
-import android.util.Log.INFO
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import android.widget.Toast
-import androidx.fragment.app.setFragmentResultListener
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
-import androidx.navigation.fragment.navArgs
-import com.example.crud_vehicle.Pref
+import com.example.crud_vehicle.core.Pref
 import com.example.crud_vehicle.R
-import com.example.crud_vehicle.model.Vehicle
-import com.example.crud_vehicle.repository.VehicleRepository
-import com.example.crud_vehicle.view.ui.description.DescriptionFragmentArgs
-import com.example.crud_vehicle.viewmodel.VehicleViewModel
+import com.example.crud_vehicle.data.room.entities.Vehicle
+import com.example.crud_vehicle.ui.viewmodel.VehicleViewModel
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.textfield.TextInputEditText
 

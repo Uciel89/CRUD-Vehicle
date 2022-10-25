@@ -1,4 +1,4 @@
-package com.example.crud_vehicle.view.ui.add
+package com.example.crud_vehicle.ui.view.fragment.add
 
 import android.os.Bundle
 import android.text.TextUtils
@@ -11,8 +11,8 @@ import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.example.crud_vehicle.R
-import com.example.crud_vehicle.model.Vehicle
-import com.example.crud_vehicle.viewmodel.VehicleViewModel
+import com.example.crud_vehicle.data.room.entities.Vehicle
+import com.example.crud_vehicle.ui.viewmodel.VehicleViewModel
 import com.google.android.material.button.MaterialButton
 
 class AddVehicleFragment : Fragment() {

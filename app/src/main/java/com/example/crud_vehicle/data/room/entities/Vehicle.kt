@@ -1,4 +1,4 @@
-package com.example.crud_vehicle.model
+package com.example.crud_vehicle.data.room.entities
 
 import android.os.Parcelable
 import androidx.room.Entity

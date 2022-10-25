@@ -1,4 +1,4 @@
-package com.example.crud_vehicle.view
+package com.example.crud_vehicle.ui.view
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -7,8 +7,8 @@ import android.widget.CheckBox
 import androidx.viewpager2.widget.ViewPager2
 import com.example.crud_vehicle.R
 import com.example.crud_vehicle.SharedApp
-import com.example.crud_vehicle.model.OnboardingItem
-import com.example.crud_vehicle.viewmodel.OnboardingItemAdapter
+import com.example.crud_vehicle.data.model.OnboardingItem
+import com.example.crud_vehicle.ui.viewmodel.OnboardingItemAdapter
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator

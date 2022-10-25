@@ -1,25 +1,19 @@
-package com.example.crud_vehicle.view.ui.description
+package com.example.crud_vehicle.ui.view.fragment.description
 
 import android.app.AlertDialog
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
-import androidx.core.os.bundleOf
-import androidx.fragment.app.setFragmentResult
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
-import com.example.crud_vehicle.Pref
+import com.example.crud_vehicle.core.Pref
 import com.example.crud_vehicle.R
-import com.example.crud_vehicle.model.Vehicle
-import com.example.crud_vehicle.view.ui.update.UpdateFragment
-import com.example.crud_vehicle.viewmodel.VehicleViewModel
+import com.example.crud_vehicle.ui.viewmodel.VehicleViewModel
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class DescriptionFragment : Fragment() {
@@ -62,7 +56,7 @@ class DescriptionFragment : Fragment() {
         return view
     }
 
-    fun deleteVehicle() {
+    private fun deleteVehicle() {
         val builder = AlertDialog.Builder(requireContext())
         builder.setPositiveButton("Si") {_ , _ ->
             mVehicleViewModel.deleteVehicle(args.currentVehicle)

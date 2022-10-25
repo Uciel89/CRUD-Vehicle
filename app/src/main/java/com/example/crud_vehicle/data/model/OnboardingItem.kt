@@ -1,4 +1,4 @@
-package com.example.crud_vehicle.model
+package com.example.crud_vehicle.data.model
 
 data class OnboardingItem (
     val onboardingImage: Int,
