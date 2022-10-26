@@ -16,8 +16,8 @@
     <string name="modelo">Modelo</string>
     <string name="marca">Marca</string>
     <string name="guardar">guardar</string>
-    <string name="Agregar_Vehiculo">Agregar Vehiculo</string>
+    <string name="Agregar_Vehiculo">Agregar Vehículo</string>
     <string name="actualizar">actualizar</string>
-    <string name="actualizar_vehiculo">Actualizar Vehículos</string>
+    <string name="actualizar_vehiculo">Actualizar Vehículo</string>
     <string name="requerido">Requerido</string>
 </resources>
