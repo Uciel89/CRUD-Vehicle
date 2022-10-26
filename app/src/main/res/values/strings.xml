@@ -18,4 +18,6 @@
     <string name="guardar">guardar</string>
     <string name="Agregar_Vehiculo">Agregar Vehiculo</string>
     <string name="actualizar">actualizar</string>
+    <string name="actualizar_vehiculo">Actualizar Vehículos</string>
+    <string name="requerido">Requerido</string>
 </resources>

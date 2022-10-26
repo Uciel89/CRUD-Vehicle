@@ -19,7 +19,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
-                android:text="@string/Agregar_Vehiculo"
+                android:text="@string/actualizar_vehiculo"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -35,6 +35,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="16dp"
                 android:hint="@string/marca"
+                app:hintTextColor="?attr/colorControlNormal"
                 app:startIconDrawable="@drawable/ic_car"
                 app:boxStrokeColor="?attr/colorControlNormal"
                 app:endIconMode="clear_text"
@@ -44,7 +45,7 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/txtEditMarcaUpdate"
-                    android:inputType="text"
+                    android:inputType="textPersonName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -58,6 +59,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="16dp"
                 android:hint="@string/modelo"
+                app:hintTextColor="?attr/colorControlNormal"
                 app:boxStrokeColor="?attr/colorControlNormal"
                 app:startIconDrawable="@drawable/ic_car"
                 app:endIconMode="clear_text"
@@ -67,7 +69,7 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/txtEditModeloUpdate"
-                    android:inputType="text"
+                    android:inputType="textPersonName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -81,6 +83,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="16dp"
                 android:hint="@string/patente"
+                app:hintTextColor="?attr/colorControlNormal"
                 app:boxStrokeColor="?attr/colorControlNormal"
                 app:startIconDrawable="@drawable/ic_car_rental"
                 app:endIconMode="clear_text"
@@ -104,6 +107,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="16dp"
                 android:hint="@string/motor"
+                app:hintTextColor="?attr/colorControlNormal"
                 app:boxStrokeColor="?attr/colorControlNormal"
                 app:startIconDrawable="@drawable/ic_flash"
                 app:endIconMode="clear_text"
@@ -126,6 +130,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="16dp"
                 android:hint="@string/color"
+                app:hintTextColor="?attr/colorControlNormal"
                 app:boxStrokeColor="?attr/colorControlNormal"
                 app:startIconDrawable="@drawable/ic_color_lens"
                 app:endIconMode="clear_text"
@@ -148,6 +153,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="16dp"
                 android:hint="@string/puertas"
+                app:hintTextColor="?attr/colorControlNormal"
                 app:boxStrokeColor="?attr/colorControlNormal"
                 app:startIconDrawable="@drawable/ic_door"
                 app:endIconMode="clear_text"

@@ -19,5 +19,6 @@
     <color name="secondary">#ef6c00</color>
     <color name="secondary_light">#ff9d3f</color>
     <color name="secondary_dark">#b53d00</color>
+    <color name="red">#FF1100</color>
 
 </resources>

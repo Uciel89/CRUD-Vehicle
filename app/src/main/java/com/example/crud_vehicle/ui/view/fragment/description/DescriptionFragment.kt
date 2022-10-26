@@ -64,7 +64,7 @@ class DescriptionFragment : Fragment() {
                 "Se elimino correctamente el vehiculo ${args.currentVehicle.marca} marca ${args.currentVehicle.modelo}",
                 Toast.LENGTH_LONG).show()
 
-            findNavController().navigate(R.id.action_descriptionFragment_to_listFragment)
+            findNavController().navigate(R.id.action_descriptionFragment_to_listFragment3)
         }
         builder.setNegativeButton("No") {_,_ -> }
         builder.setTitle("Eliminar ${args.currentVehicle.marca}")

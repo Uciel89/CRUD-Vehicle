@@ -17,6 +17,7 @@ import com.example.crud_vehicle.data.room.entities.Vehicle
 import com.example.crud_vehicle.ui.viewmodel.VehicleViewModel
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.textfield.TextInputEditText
+import com.google.android.material.textfield.TextInputLayout
 
 class UpdateFragment : Fragment() {
 
@@ -79,7 +80,7 @@ class UpdateFragment : Fragment() {
             Toast.makeText(requireContext(), "Vehiculo actualizado correctamente", Toast.LENGTH_SHORT).show()
 
             // Volvemos a al fragment anterior
-            findNavController().navigate(R.id.action_updateFragment_to_listFragment)
+            findNavController().navigate(R.id.listFragment)
         } else {
             Toast.makeText(requireContext(), "Verificar que todos los campos estén completados", Toast.LENGTH_SHORT).show()
         }
@@ -94,7 +95,7 @@ class UpdateFragment : Fragment() {
         color: String,
         puertas: String
     ): Boolean {
-        return !(TextUtils.isEmpty(marca) &&
+        return (TextUtils.isEmpty(marca) &&
                 TextUtils.isEmpty(modelo) &&
                 TextUtils.isEmpty(patente) &&
                 TextUtils.isEmpty(motor) &&

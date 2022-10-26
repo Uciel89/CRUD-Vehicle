@@ -8,12 +8,15 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import android.widget.Toast
+import androidx.activity.addCallback
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.example.crud_vehicle.R
 import com.example.crud_vehicle.data.room.entities.Vehicle
 import com.example.crud_vehicle.ui.viewmodel.VehicleViewModel
 import com.google.android.material.button.MaterialButton
+import com.google.android.material.textfield.TextInputEditText
+import com.google.android.material.textfield.TextInputLayout
 
 class AddVehicleFragment : Fragment() {
 
@@ -57,7 +60,7 @@ class AddVehicleFragment : Fragment() {
 
             // Return to the before fragment
             // Volvemos a al fragment anterior
-            findNavController().navigate(R.id.action_addVehicleFragment_to_listFragment)
+            findNavController().navigate(R.id.listFragment)
         } else {
             Toast.makeText(requireContext(), "Verificar que todos los campos esten completados", Toast.LENGTH_SHORT).show()
         }
@@ -73,7 +76,7 @@ class AddVehicleFragment : Fragment() {
         color: String,
         puertas: String
     ): Boolean {
-        return !(TextUtils.isEmpty(marca) &&
+        return (TextUtils.isEmpty(marca) &&
                 TextUtils.isEmpty(modelo) &&
                 TextUtils.isEmpty(patente) &&
                 TextUtils.isEmpty(motor) &&

@@ -36,6 +36,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="16dp"
                 android:hint="@string/marca"
+                app:hintTextColor="?attr/colorControlNormal"
                 app:boxStrokeColor="?attr/colorControlNormal"
                 app:startIconDrawable="@drawable/ic_car"
                 app:endIconMode="clear_text"
@@ -44,7 +45,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/textAgregarVehiculos">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/txtEditMarca"
+
                     android:inputType="text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
@@ -59,6 +60,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="16dp"
                 android:hint="@string/modelo"
+                app:hintTextColor="?attr/colorControlNormal"
                 app:boxStrokeColor="?attr/colorControlNormal"
                 app:startIconDrawable="@drawable/ic_car"
                 app:endIconMode="clear_text"
@@ -82,6 +84,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="16dp"
                 android:hint="@string/patente"
+                app:hintTextColor="?attr/colorControlNormal"
                 app:boxStrokeColor="?attr/colorControlNormal"
                 app:startIconDrawable="@drawable/ic_car_rental"
                 app:endIconMode="clear_text"
@@ -105,6 +108,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="16dp"
                 android:hint="@string/motor"
+                app:hintTextColor="?attr/colorControlNormal"
                 app:boxStrokeColor="?attr/colorControlNormal"
                 app:startIconDrawable="@drawable/ic_flash"
                 app:endIconMode="clear_text"
@@ -128,6 +132,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="16dp"
                 android:hint="@string/color"
+                app:hintTextColor="?attr/colorControlNormal"
                 app:boxStrokeColor="?attr/colorControlNormal"
                 app:startIconDrawable="@drawable/ic_color_lens"
                 app:endIconMode="clear_text"
@@ -151,6 +156,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="16dp"
                 android:hint="@string/puertas"
+                app:hintTextColor="?attr/colorControlNormal"
                 app:boxStrokeColor="?attr/colorControlNormal"
                 app:startIconDrawable="@drawable/ic_door"
                 app:endIconMode="clear_text"

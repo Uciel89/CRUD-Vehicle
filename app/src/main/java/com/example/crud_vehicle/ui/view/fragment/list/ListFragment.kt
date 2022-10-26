@@ -2,9 +2,11 @@ package com.example.crud_vehicle.ui.view.fragment.list
 
 import android.os.Bundle
 import android.view.*
+import androidx.activity.addCallback
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -24,6 +26,12 @@ class ListFragment : Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_list, container, false)
 
+        // Establecemos la acción del botón para retroceder del celular
+        val callback = requireActivity().onBackPressedDispatcher.addCallback(this) {
+            findNavController().navigate(R.id.listFragment)
+        }
+        callback.isEnabled = true
+
         // Conf recyclerView
         val adapter = ListItemAdapter()
         val recyclerViewList = view.findViewById<RecyclerView>(R.id.recyclerViewList)
@@ -35,8 +43,10 @@ class ListFragment : Fragment() {
             adapter.setData(vehicles)
         } )
 
+        val nav = Navigation.createNavigateOnClickListener(R.id.nav_list_to_add)
         view.findViewById<FloatingActionButton>(R.id.addVehicleButton).setOnClickListener {
-            findNavController().navigate(R.id.action_listFragment_to_addVehicleFragment)
+            // findNavController().navigate(R.id.action_listFragment_to_addVehicleFragment)
+            nav.onClick(it)
         }
 
         return view

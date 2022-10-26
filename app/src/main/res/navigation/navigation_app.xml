@@ -11,20 +11,19 @@
         android:label="Lista"
         tools:layout="@layout/fragment_list" >
         <action
-            android:id="@+id/action_listFragment_to_addVehicleFragment"
-            app:destination="@id/addVehicleFragment" />
-        <action
             android:id="@+id/action_listFragment_to_descriptionFragment"
             app:destination="@id/descriptionFragment" />
+
+        <action android:id="@+id/nav_list_to_add"
+            app:destination="@+id/addVehicleFragment"
+            app:popUpTo="@id/listFragment"/>
+
     </fragment>
     <fragment
         android:id="@+id/addVehicleFragment"
         android:name="com.example.crud_vehicle.ui.view.fragment.add.AddVehicleFragment"
         android:label="Agregar"
         tools:layout="@layout/fragment_add_vehicle" >
-        <action
-            android:id="@+id/action_addVehicleFragment_to_listFragment"
-            app:destination="@id/listFragment" />
     </fragment>
     <fragment
         android:id="@+id/descriptionFragment"
@@ -32,14 +31,15 @@
         android:label="Descripción"
         tools:layout="@layout/fragment_description" >
         <action
-            android:id="@+id/action_descriptionFragment_to_listFragment"
-            app:destination="@id/listFragment" />
-        <action
             android:id="@+id/action_descriptionFragment_to_updateFragment"
-            app:destination="@id/updateFragment" />
+            app:destination="@id/updateFragment"
+            app:popUpTo="@id/descriptionFragment"/>
         <argument
             android:name="currentVehicle"
             app:argType="com.example.crud_vehicle.data.room.entities.Vehicle" />
+        <action
+            android:id="@+id/action_descriptionFragment_to_listFragment3"
+            app:destination="@id/listFragment" />
     </fragment>
     <fragment
         android:id="@+id/updateFragment"
@@ -50,8 +50,5 @@
             android:name="currentVehicle2"
             app:nullable="true"
             android:defaultValue="@null"/>
-        <action
-            android:id="@+id/action_updateFragment_to_listFragment"
-            app:destination="@id/listFragment"/>
     </fragment>
 </navigation>
