@@ -95,11 +95,11 @@ class UpdateFragment : Fragment() {
         color: String,
         puertas: String
     ): Boolean {
-        return (TextUtils.isEmpty(marca) &&
-                TextUtils.isEmpty(modelo) &&
-                TextUtils.isEmpty(patente) &&
-                TextUtils.isEmpty(motor) &&
-                TextUtils.isEmpty(color) &&
-                TextUtils.isEmpty(puertas))
+        return (!TextUtils.isEmpty(marca) &&
+                !TextUtils.isEmpty(modelo) &&
+                !TextUtils.isEmpty(patente) &&
+                !TextUtils.isEmpty(motor) &&
+                !TextUtils.isEmpty(color) &&
+                !TextUtils.isEmpty(puertas))
     }
 }

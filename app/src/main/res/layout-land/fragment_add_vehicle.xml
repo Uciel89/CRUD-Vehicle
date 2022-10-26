@@ -45,6 +45,7 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/txtEditMarca"
+                    android:inputType="textCapSentences"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -68,6 +69,7 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/txtEditModelo"
+                    android:inputType="textCapSentences"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -91,6 +93,7 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/txtEditPatente"
+                    android:inputType="textCapSentences"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -114,6 +117,7 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/txtEditMotor"
+                    android:inputType="numberDecimal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -137,6 +141,7 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/txtEditColor"
+                    android:inputType="textCapSentences"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -160,6 +165,7 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/txtEditPuertas"
+                    android:inputType="number"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
             </com.google.android.material.textfield.TextInputLayout>
