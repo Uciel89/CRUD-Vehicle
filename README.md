@@ -17,7 +17,7 @@ Principalmente con:
 
 Y aplicando un poco de arquiteturas de software:
 - MVVM (Modal, ViewModal, View)
-- Clear Arquitecture ()
+- Clear Arquitecture
 
 ## Video de muestra 📽️
 
