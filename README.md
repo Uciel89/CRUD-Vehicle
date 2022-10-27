@@ -18,3 +18,9 @@ Principalmente con:
 Y aplicando un poco de arquiteturas de software:
 - MVVM (Modal, ViewModal, View)
 - Clear Arquitecture
+
+##
+<p align="center">
+  <img style="width : 100px" src="https://github.com/Rviewer-Challenges/H21fsMEAhjInLkmKSET7/blob/main/Imagenes/logo.png"/>
+  <h4 align="center">Creado por Uciel Daró</h4>
+</p>
