@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">Crud Vehicle</string>
     <string name="arrow">flecha</string>
     <string name="start">Empezar</string>
     <string name="skip">Saltear</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="add">add</string>
+    <string name="n_a">N/A</string>
     <string name="borrar">borrar</string>
     <string name="editar">editar</string>
     <string name="patente">Patente</string>
@@ -13,8 +16,11 @@
     <string name="modelo">Modelo</string>
     <string name="marca">Marca</string>
     <string name="guardar">guardar</string>
-    <string name="Agregar_Vehiculo">Agregar Vehiculo</string>
+    <string name="Agregar_Vehiculo">Agregar Vehículo</string>
     <string name="actualizar">actualizar</string>
-    <string name="actualizar_vehiculo">Actualizar Vehículos</string>
+    <string name="actualizar_vehiculo">Actualizar Vehículo</string>
     <string name="requerido">Requerido</string>
+    <string name="_1_0">1.0</string>
+    <string name="creado_por">Creado por</string>
+    <string name="creador">Uciel Daró</string>
 </resources>

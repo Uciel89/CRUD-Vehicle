@@ -20,4 +20,7 @@
     <string name="actualizar">actualizar</string>
     <string name="actualizar_vehiculo">Actualizar Vehículo</string>
     <string name="requerido">Requerido</string>
+    <string name="_1_0">1.0</string>
+    <string name="creado_por">Creado por</string>
+    <string name="creador">Uciel Daró</string>
 </resources>

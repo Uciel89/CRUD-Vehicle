@@ -17,6 +17,12 @@
         <action android:id="@+id/nav_list_to_add"
             app:destination="@+id/addVehicleFragment"
             app:popUpTo="@id/listFragment"/>
+        <action
+            android:id="@+id/action_listFragment_to_informationFragment"
+            app:destination="@id/informationFragment" />
+        <action
+            android:id="@+id/nav_list_to_information"
+            app:destination="@id/informationFragment" />
 
     </fragment>
     <fragment
@@ -51,4 +57,9 @@
             app:nullable="true"
             android:defaultValue="@null"/>
     </fragment>
+    <fragment
+        android:id="@+id/informationFragment"
+        android:name="com.example.crud_vehicle.InformationFragment"
+        android:label="Acerca de la app"
+        tools:layout="@layout/fragment_information" />
 </navigation>
