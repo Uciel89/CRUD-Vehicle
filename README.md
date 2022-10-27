@@ -20,4 +20,5 @@ Y aplicando un poco de arquiteturas de software:
 - Clear Arquitecture
 
 ## Video de muestra 📽️
+![video](https://github.com/Uciel89/CRUD-Vehicle/blob/main/video/Desmotraci%C3%B3n.gif)
 
